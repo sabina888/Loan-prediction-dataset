@@ -1,65 +1,38 @@
-Loan Prediction using Ensemble Learning
+Loan Approval Prediction Model
+In this model, we built a loan approval model in which we can determine whether a person should get a loan or not, and is based on various factors.
 
-Overview
+We can define a loan as a type of credit vehicle in which a sum of money is lent to another party in exchange for future repayment of the value or principal amount. In many cases, the lender also adds interest or finance charges to the principal value, which the borrower must repay in addition to the principal balance. (credit: Investopedia)
 
-Dream Housing Finance Company aims to automate the loan eligibility process based on customer details provided in an online application form. This project utilizes machine learning, specifically ensemble learning techniques, to predict loan eligibility based on various features such as income, credit history, and employment status.
+About the Dataset
+The dataset used for this model was taken from Kaggle: Loan Prediction Problem Dataset.
 
-Dataset
+Each Applicant is attributed with the following columns in this data set and is as follows:
 
-The dataset includes the following features:
+Column	Description
+Loan_ID	Unique Loan ID
+Gender	Male/Female
+Married	Whether Married: Yes/No
+Dependents	No. of people depending on the Applicant
+Education	Graduate/Undergraduate
+Self_Employment	Whether Self_Employment : Yes/No
+ApplicantIncome	Applicant Income
+CoapplicantIncome	Co-Applicant Income
+LoanAmount	Loan Amount (in thousands)
+Loan_Amount_Term	Loan Duration
+Credit_History	Credit History of the Applicant
+Property_Area	Urban/Semiurban/Rural
+Loan_Status	Whether Loan Approved: Yes/No
+The dimensions of the dataset are 614*13
 
-Loan_ID: Unique Loan ID
-
-Gender: Male/Female
-
-Married: Applicant married (Y/N)
-
-Dependents: Number of dependents
-
-Education: Applicant Education (Graduate/Undergraduate)
-
-Self_Employed: Self-employed (Y/N)
-
-ApplicantIncome: Applicant's income
-
-CoapplicantIncome: Co-applicant's income
-
-LoanAmount: Loan amount in thousands
-
-Loan_Amount_Term: Term of loan in months
-
-Credit_History: Credit history meets guidelines (1: Yes, 0: No)
-
-Property_Area: Urban/Semi-Urban/Rural
-
-Loan_Status: Target variable (Y: Approved, N: Not Approved)
-
-Objective
-
-The goal of this project is to build a robust machine learning model using ensemble learning techniques to predict whether a loan will be approved or not.
-
-Methodology
-
-Data Preprocessing:
-
-Handle missing values
-
-Encode categorical variables
-
-Normalize numerical features
-
-Model Selection:
-
+Libraries used in this Model
+NumPy
+Pandas
+SciKit-Learn
+Matplotlib
+Seaborn
+Algorithms used:
 Random Forest Classifier
-
 Gradient Boosting Classifier
-
 XGBoost Classifier
-
-Stacking Ensemble Model
-
-Evaluation Metrics:
-
-Accuracy
-
-Precision, Recall, F1-score
+AdaBoost
+CatBoost
